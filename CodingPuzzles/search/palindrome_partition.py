@@ -8,11 +8,12 @@ def isPalindrome(s):
 
 def dfs_visit(s, stringlist):
     global result
+
     if len(s) == 0:
         print "stringlist: ", stringlist
         result.append(stringlist)
-        print "result: ", result
-    for i in range(1, len(s) + 1):
+
+    for i in range(1, len(s) + 1): # when i == len(s), s[i:] is empty string, which will cause result be updated
         if isPalindrome(s[:i]):
            dfs_visit(s[i:], stringlist + [s[:i]])
 
