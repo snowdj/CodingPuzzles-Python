@@ -41,3 +41,6 @@ class Solution:
     def isValidBST(self, root):
         return self.ValidBST(root, float("-infinity"), float("infinity"))
 ```
+
+# Reference
+[4 Methods](http://www.cnblogs.com/yuzhangcmu/p/4177047.html)
