@@ -19,14 +19,9 @@ LCA(6,7) = 7
 
 # Thoughts
 
-## Method 1
 - Recursive
 - Return condition: If current node is null, or current node is one of the two given nodes, return current node
-- Recursively look for the postion of A and B in the left subtree and right subtree. If A and B are in two subtrees, then root is their LCA
-
-## Method 2
-- Find the path from root node to the target nodes
-- Find the node where the two paths start to diverge
+- Recursively look for the position of A and B in the left subtree and right subtree. If A and B are in two subtrees, then root is their LCA
 
 # My Solution
 
