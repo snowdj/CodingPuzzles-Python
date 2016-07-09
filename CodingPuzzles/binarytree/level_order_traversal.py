@@ -1,7 +1,4 @@
-import os, sys
-
-import binarynode
-import binarytree0
+from CodingPuzzles.binarytree.lib import binarytree0
 
 tree = binarytree0.BinaryTree0()
 root = tree.getroot()
