@@ -9,6 +9,7 @@ class BinaryTree0():
 #  3   5
 # / \   \
 #0  2   -1
+
     def __init__(self):
         node0 = binarynode.BinaryNode(0)
         node1 = binarynode.BinaryNode(2)
