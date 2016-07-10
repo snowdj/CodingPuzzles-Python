@@ -24,9 +24,11 @@ return is level order traversal as:
 
 # Thoughts
 
+- BFS
 - Result is a list of list, each sublist stores the nodes of one level
 - If the level doesn't exist, add a sublist: ```result.append([])```
 - Use pre-order traversal to visit each node, and append them to levels accordingly
+- Why use preorder: starting from root first
 
 # My Solution
 
