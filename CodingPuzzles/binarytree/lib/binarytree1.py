@@ -44,3 +44,9 @@ class BinaryTree1():
 
     def get_maxd(self):
         return 4
+
+    def get_inorder(self):
+        return [4, 2, 1, 7, 5, 3, 6]
+
+    def get_postorder(self):
+        return [4, 2, 7, 5, 6, 3, 1]

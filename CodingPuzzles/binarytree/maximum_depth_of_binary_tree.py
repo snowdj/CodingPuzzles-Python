@@ -22,6 +22,12 @@ def getMaxD(node):
 
     return maxD
 
+def maxDepth2(root):
+    if root is None:
+        return 0
+
+    return max(maxDepth2(root.left), maxDepth2(root.right)) + 1
+
 def main():
     d = maxDepth(root)
     print "max depth: ", d
@@ -30,6 +36,10 @@ def main():
         print "Max Depth is correct!"
     else:
         print "Max Depth is wrong!"
+
+    d1 = maxDepth2(root)
+    print "max depth 2: ", d1
+    
 
 if __name__ == '__main__':
     main()
