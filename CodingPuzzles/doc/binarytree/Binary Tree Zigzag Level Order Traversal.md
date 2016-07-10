@@ -37,22 +37,32 @@ return its zigzag level order traversal as:
 # My Solution
 
 ```
-def preorder(self, root, level, res):
-    if root:
-        if len(res) < level + 1:
-            res.append([])
-        if level % 2 == 0:
-            res[level].append(root.val)
-        else:
-            res[level].insert(0, root.val)
+    def preorder(self, root, level, res):
+        if root:
+            if len(res) < level + 1:
+                res.append([])
+            if level % 2 == 0:
+                res[level].append(root.val)
+            else:
+                res[level].insert(0, root.val)
         
-        self.preorder(root.left, level+1, res)
-        self.preorder(root.right, level+1, res)
+        if root.left:
+            self.preorder(root.left, level+1, res)
+        if root.right:
+            self.preorder(root.right, level+1, res)
+        
+    def zigzagLevelOrder(self, root):
+        # write your code here
 
-def zigzagLevelOrder(self, root):
-    res = []
-    self.preorder(root, 0, res)
-    return res
+        if root is None:
+            return []
+            
+        res = []
+        self.preorder(root, 0, res)
+        return res
 ```
 
 # Reference
+
+- http://www.cnblogs.com/zuoyuan/p/3722022.html
+

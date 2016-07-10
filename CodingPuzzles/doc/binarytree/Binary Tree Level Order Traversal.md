@@ -48,3 +48,5 @@ return is level order traversal as:
 ```
 
 # Reference
+
+- http://www.cnblogs.com/zuoyuan/p/3722081.html
