@@ -8,7 +8,7 @@ Return a deep copy of the list.
 
 - Step 1: Insert a new node after each node in the original list
   - new node value = original node value
-  - new node random pointer = original node random pointer (initial)
+  - new node random pointer = original node random pointer (initial, optional)
 - Step 2: Mapping the random pointer
   - New node's random pointer = original node random.next
 - Note scanning the original node only: tmp = tmp.next.next
