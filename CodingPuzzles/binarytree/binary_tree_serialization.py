@@ -47,13 +47,13 @@ def preorder2(node, res):
         res.append('#')
 
 def main():
-    print serialize(root)
-    print serialize2(root)
+    print(serialize(root))
+    print(serialize2(root))
 
     if serialize(root) == serialize2(root):
-        print "PASS"
+        print("PASS")
     else:
-        print "FAIL"
+        print("FAIL")
 
 
 
