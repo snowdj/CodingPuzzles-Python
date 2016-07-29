@@ -22,7 +22,7 @@ The binary tree A is a height-balanced binary tree, but B is not.
 
 ## Thoughts
 
-- Recursively traversal the tree. Get the height difference of each node. 
+- Recursively traverse the tree. Get the height difference of each node. 
 - Divide and conquer
 - First, work on the left sub-tree. Then work on the right sub-tree
 - Condition of balanced: abs(leftHeight - rightHeight) <= 1
