@@ -21,15 +21,16 @@ Return index ```1``` (number 2) or ```6``` (number 7)
 # Thoughts
 
 - Binary Search
-- Four possible conditions if picking a position t randomly from this array:
+- When randomly picking a position ```t``` from the given array, there will be four possible conditions:
   - A[t-1] > A[t] > A[t+1]: Peak is on the left
   - A[t-1] < A[t] > A[t+1]: Peak is t
   - A[t-1] < A[t] < A[t+1]: Peak is on the right
   - A[t-1] > A[t], A[t+1] > A[t]: Peak is on the right, or left
+  
 # My Solution
 
 ```
-def findPeak(self, A):
+def findPeak(A):
     start, end = 1, len(A) - 2:
     while start + 1 < end:
         mid = start + (end - start)/2
