@@ -6,7 +6,8 @@ Given a sorted array and a target value, return the index if the target is found
 
 You may assume NO duplicates in the array.
 
-Example:
+**Example**
+
 ```[1,3,5,6]```, 5 -> 2
 ```[1,3,5,6]```, 7 -> 4
 

@@ -13,7 +13,7 @@ A[P] > A[P-1] && A[P] > A[P+1]
 
 Find a peak element in this array. Return the index of the peak.
 
-Example
+**Example**
 
 Given ```[1, 2, 1, 3, 4, 5, 7, 6]```
 Return index ```1``` (number 2) or ```6``` (number 7)

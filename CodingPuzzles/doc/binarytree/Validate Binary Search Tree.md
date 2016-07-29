@@ -6,7 +6,7 @@ Assume a BST is defined as follows:
 - The left subtree of a node contains only nodes with keys less than the node's key.
 - The right subtree of a node contains only nodes with keys greater than the node's key.
 - Both the left and right subtrees must also be binary search trees.
-- A signle node tree is a BST.
+- A single node tree is a BST.
 
 **Example**
 

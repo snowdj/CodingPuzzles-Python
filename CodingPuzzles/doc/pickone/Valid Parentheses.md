@@ -4,7 +4,7 @@ http://www.lintcode.com/en/problem/valid-parentheses/?rand=true
 
 Given a string containing just the characters ```'('```, ```')'```, ```'{'```, ```'}'```, ```'['``` and ```']'```, determine if the input string is valid.
 
-** Example **
+**Example**
 
 The brackets must close in the correct order, ```"()"``` and ```"()[]{}"``` are all valid but ```"(]"``` and ```"([)]"``` are not.
 
