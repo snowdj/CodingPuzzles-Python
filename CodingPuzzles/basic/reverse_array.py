@@ -11,6 +11,11 @@ def reverse_array(list):
 
     return list
 
+def Reverse_Function(item):
+    for i in range(len(item)/2):
+        item[i], item[-(i+1)] = item[-(i+1)], item[i]
+    return item
+
 if __name__ == "__main__":
     test_list = [1, 2, 3, 4, 5, 6]
     result = reverse_array(test_list)
