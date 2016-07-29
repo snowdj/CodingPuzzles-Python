@@ -4,7 +4,7 @@ http://www.lintcode.com/en/problem/delete-node-in-the-middle-of-singly-linked-li
 
 Implement an algorithm to delete in a node in the middle of a singly linked list, given only access to that node.
 
-** Example **
+**Example**
 
 Given ```1->2->3->4``` and node ```3```, return ```1->2->4```
 

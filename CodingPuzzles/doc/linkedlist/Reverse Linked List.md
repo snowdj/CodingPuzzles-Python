@@ -4,7 +4,7 @@ http://www.lintcode.com/en/problem/reverse-linked-list/
 
 Reverse a linked list.
 
-** Example **
+**Example**
 
 Given ```1->2->3```, return the reversed linked list ```3->2->1```. 
 

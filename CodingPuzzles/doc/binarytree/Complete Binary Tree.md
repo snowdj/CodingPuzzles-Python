@@ -2,7 +2,7 @@
 
 Check a binary tree is completed or not. A complete binary tree is a binary tree that every level is completed filled except the deepest level. In the deepest level, all nodes must be as left as possible.
 
-Example
+**Example**
 
 ```
     1

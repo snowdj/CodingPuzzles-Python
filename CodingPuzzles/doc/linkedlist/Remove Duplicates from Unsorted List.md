@@ -4,7 +4,7 @@ http://www.lintcode.com/en/problem/remove-duplicates-from-unsorted-list/
 
 Write code to remove duplicates from an unsorted linked list.
 
-** Example **
+**Example**
 
 Given ```1->3->2->1->4```
 Return ```1->3->2->4```

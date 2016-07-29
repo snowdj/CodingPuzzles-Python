@@ -6,7 +6,7 @@ Given a binary search tree and a new tree node, insert the node into the tree. Y
 
 * You can assume there is no duplicate values in this tree + node
 
-Example
+**Example**
 
 Given binary search tree as follow, after insert node 6, the tree should be:
 

@@ -6,7 +6,7 @@ Given a linked list, return the node where the cycle begins.
 
 If there is no cycle, return ```null```. 
 
-** Example **
+**Example**
 
 Given ```-21->10->4->5```, tail connects to node index 1, return ```10```
 

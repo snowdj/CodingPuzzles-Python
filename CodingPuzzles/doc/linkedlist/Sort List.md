@@ -4,7 +4,7 @@ http://www.lintcode.com/en/problem/sort-list/
 
 Sort a linked list in O(nlogn) time using constant space complexity.
 
-** Example **
+**Example**
 
 Given ```1->3->2->null```, sort it to ```1->2->3->null```. 
 

@@ -8,7 +8,8 @@ Assume a BST is defined as follows:
 - Both the left and right subtrees must also be binary search trees.
 - A signle node tree is a BST.
 
-Example
+**Example**
+
 ```
   2
  / \

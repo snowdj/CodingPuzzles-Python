@@ -6,7 +6,7 @@ Given a binary tree, find all paths that sum of the nodes in the path equals to 
 
 A valid path is from root node to any of the leaf nodes. 
 
-Example
+**Example**
 
 ```
     1
