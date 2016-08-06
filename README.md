@@ -17,8 +17,8 @@ So in summary, I would say that you don't need solve the coding puzzles to get y
 ## Repo Structure
 
 - /CodingPuzzles-Python/doc
-    Documents for each problem and solutions
+  - Documents for each problem and solutions
 - Other directories under /CodingPuzzles-Python
-    Source code of the problem solutions
+  - Source code of the problem solutions
 
-by Euccas
+by [Euccas](http://euccas.me)
