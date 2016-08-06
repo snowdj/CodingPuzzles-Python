@@ -14,4 +14,11 @@ My answer is: No and Yes.
 
 So in summary, I would say that you don't need solve the coding puzzles to get your work done when you build a software system, but you probably could do your work better if you study well on these basic coding puzzles.
 
+## Repo Structure
+
+- /CodingPuzzles-Python/doc
+    Documents for each problem and solutions
+- Other directories under /CodingPuzzles-Python
+    Source code of the problem solutions
+
 by Euccas
