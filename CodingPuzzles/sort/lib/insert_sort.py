@@ -1,7 +1,7 @@
 # Insertion Sort
 
 def InsertionSort(lst):
-    if lst is None or len(lst) == 0:
+    if lst is None or len(lst) <= 1:
         return lst
 
     for j in range(1, len(lst)):
