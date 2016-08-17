@@ -4,12 +4,12 @@ def reverse_array(list):
 
     for i in range(0, len(list)/2):
         j = len(list) - i - 1
-        print(j)
+        #print(j)
         list[i], list[j] = list[j], list[i]
 
     return list
 
-def Reverse_Function(item):
+def reverse_array_2(item):
     for i in range(len(item)/2):
         item[i], item[-(i+1)] = item[-(i+1)], item[i]
     return item

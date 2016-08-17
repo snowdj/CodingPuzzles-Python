@@ -1,10 +1,10 @@
 import unittest
 import time
 
-from CodingPuzzles.sort.lib import insert_sort
-from CodingPuzzles.sort.lib import merge_sort
-from CodingPuzzles.sort.lib import bubble_sort
-from CodingPuzzles.sort.lib import quick_sort
+from CodingPuzzles.sort.src import insert_sort
+from CodingPuzzles.sort.src import merge_sort
+from CodingPuzzles.sort.src import bubble_sort
+from CodingPuzzles.sort.src import quick_sort
 
 class SortTestCase(unittest.TestCase):
     def setUp(self):
