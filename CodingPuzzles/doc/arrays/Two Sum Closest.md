@@ -26,7 +26,7 @@ The minimum difference is ```1```. (4 - (2 + 1) = 1).
 # My Solution
 
 ```
-def twoSumCloset(nums, target):
+def twoSumClosest(nums, target):
     nums.sort()
     i, j = 0, len(nums) - 1
     
