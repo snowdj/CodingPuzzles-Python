@@ -14,7 +14,7 @@ Given the array ```[−2,2,−3,4,−1,2,1,−5,3]```, the contiguous subarray `
   - The maxsum comes from the max range of a growing range
   - What causes a growing range to end? Negative numbers and negative sums
   - Keep a tsum. If tsum < 0, reset the start point of tsum range
-- Solution 2: Prefix Sum: Max Sum = Current Sum - Min Sum
+- Solution 2: Prefix Sum: Max Sum = Current Sum - Pre Min Sum
 
 # My Solution
 
