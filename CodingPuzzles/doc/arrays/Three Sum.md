@@ -38,7 +38,7 @@ def threeSum(num):
             right = len(num) - 1
             while left < right:
                 if num[left] + num[right] == -num[i]:
-                    res.append([num[i], num[left], num[right])
+                    res.append([num[i], num[left], num[right]])
                     left += 1
                     right -= 1
                     while left < right and num[left] == num[left-1]:
