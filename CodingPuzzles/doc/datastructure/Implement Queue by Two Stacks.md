@@ -25,7 +25,8 @@ pop()   // return 2
 - push: put elements to stack 1
 - top: adjust from stack 1 to stack 2, then return the last element (top, -1) in stack 2, which was the first element in stack 1
 - pop: adjust from stack 1 to stack 2, then pop stack 2 to remove the element which was the first element in stack 1
-- adjust: pop from stack 1 and push to stack 2; only do this when stack 2 is empty. When stack 2 is not empty, pop and top result will not be affected by the new elements in stack 1.
+- adjust: pop from stack 1 and push to stack 2; only do this when stack 2 is empty. When stack 2 is not empty, pop and top result will not be affected by the new elements in stack 1
+- Note when implementing with Python, stacks are actually list data structure. list.pop returns the first element in the list. list[-1] is the last element of the list.
 
 # My Solution
 
