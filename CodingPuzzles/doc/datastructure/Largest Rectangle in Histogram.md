@@ -14,6 +14,7 @@ Push current height and index as candidate rectangle start position.
 Ignore.
 - Case 3: current < previous
 Need keep popping out previous heights, and compute the candidate rectangle with height and width (current index - previous index). Push the height and index to stacks.
+- Think about: What does the last while loop do? After the for loop, the stackHeight records the last few values which can be used to calculate a rectangle. The width is len(height) (till end) - index in the stack
 
 # My Solution
 
