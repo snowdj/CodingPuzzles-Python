@@ -18,7 +18,11 @@ isEmpty() // return true
 
 # Thoughts
 
-
+- Use one queue
+  - push(x): push to back
+  - pop(): for all elements in queue except for the last one, pop from front then push to back. Then pop from front
+  - top(): for all elements in queue, pop from front and push to back，use top to record the poped element, return top
+  - empty(): check if queue is empty
 
 # My Solution
 
@@ -49,3 +53,6 @@ class Stack:
         return self.queue == []
 ```
 
+# Reference
+
+- http://bookshadow.com/weblog/2015/06/11/leetcode-implement-stack-using-queues/
