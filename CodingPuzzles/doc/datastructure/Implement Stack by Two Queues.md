@@ -18,11 +18,14 @@ isEmpty() // return true
 
 # Thoughts
 
-- Use one queue
-  - push(x): push to back
-  - pop(): for all elements in queue except for the last one, pop from front then push to back. Then pop from front
-  - top(): for all elements in queue, pop from front and push to back，use top to record the poped element, return top
-  - empty(): check if queue is empty
+- Use one queue: push - O(1), pop - O(n), top - O(n)
+  - push(x): Push to back
+  - pop(): For all elements in queue except for the last one, pop from front then push to back. Then pop from front
+  - top(): For all elements in queue, pop from front and push to back，use top to record the poped element, return top
+  - empty(): Check if queue is empty
+
+- Use two queues: push - O(n), pop - O(1), top - O(1)
+  - push(x): Keep all the elements in queue1 in reverse order. In every push, put the new element in the empty queue2, and add elements in queue1 to queue2 (orders are reversed now). Swap queue1 and queue2, so now the first element in queue1 is the last one added to queue1.
 
 # My Solution
 
@@ -51,6 +54,34 @@ class Stack:
     
     def isEmpty(self):
         return self.queue == []
+```
+
+## Solution 2: using two queues
+
+```
+class Stack:
+    def __init__(self):
+       self.q1 = []
+       self.q2 = []
+    
+    def push(self, x):
+        self.q2.append(x)
+        while(len(self.q1) > 0):
+            self.q2.append(self.q1.pop(0))
+        
+        tmp = self.q1
+        self.q1 = self.q2
+        self.q2 = tmp
+    
+    def pop(self):
+        self.q1.pop(0)
+    
+    def top(self):
+        return self.q1[0]
+    
+    def isEmpty(self):
+        return len(self.q1) == 0
+        
 ```
 
 # Reference
