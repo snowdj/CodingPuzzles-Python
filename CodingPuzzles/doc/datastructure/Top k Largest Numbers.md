@@ -12,7 +12,8 @@ Return ```[1000, 100, 10]```.
 # Thoughts
 
 - The straight forward solution is sorting the array and gets the top k largest numbers
-- A better solution is using heapq datastructure in Python
+- A better solution is using heapq data structure in Python
+  - heapq.nlargest()
 
 # My Solution
 
