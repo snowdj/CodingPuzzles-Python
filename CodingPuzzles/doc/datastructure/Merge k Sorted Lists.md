@@ -51,3 +51,8 @@ def mergeKLists(lists):
             
      return head.next
 ```
+
+# Reference
+
+- https://docs.python.org/2/library/heapq.html
+
