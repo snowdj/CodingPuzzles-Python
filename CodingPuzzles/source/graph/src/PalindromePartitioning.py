@@ -1,29 +1,3 @@
-# Problem
-
-http://www.lintcode.com/en/problem/palindrome-partitioning/
-
-Given a string s, partition s such that every substring of the partition is a palindrome.
-
-Return all possible palindrome partitioning of s.
-
-**Example**
-
-Given s = "aab", return:
-
-```
-[
-  ["aa","b"],
-  ["a","a","b"]
-]
-```
-
-# Thoughts
-
-- DFS
-
-# My Solution
-
-```
 def isPalindrome(s):
     for i in range(len(s)):
         if s[i] != s[len(s) - 1 - i]:
@@ -48,8 +22,3 @@ if __name__ == '__main__':
     del res[:]
     partition("abbac")
     print(res)
- 
-```
-
-# Reference
-
