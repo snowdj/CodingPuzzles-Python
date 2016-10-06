@@ -20,6 +20,7 @@ Given s = "aab", return:
 # Thoughts
 
 - DFS
+- There is a similar problem: Palindrome Partitioning II. That one asks to find the minimum needed cut number, so use DP to resolve it (find the number of possible solutions). This problem here asks for all possible partitions, so use search algorithm.
 
 # My Solution
 
