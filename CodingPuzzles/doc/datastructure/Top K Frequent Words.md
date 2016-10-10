@@ -90,5 +90,48 @@ def topKFrequentWords(words, k):
     return result
 ```
 
+## Solution 3 (Similar to Solution 2)
+
+```
+"""Count words."""
+
+def count_words(s, n):
+    """Return the n most frequently occuring words in s."""
+    
+    # TODO: Count the number of occurences of each word in s
+    counts = {}
+    words = s.split()
+    for i in words:
+        if i in counts:
+            counts[i] += 1
+        else:
+            counts[i] = 1
+    
+    # TODO: Sort the occurences in descending order (alphabetically in case of ties)
+    count_pairs = []
+    for word, cnt in counts.items():
+        count_pairs.append((word, cnt))
+    
+    count_pairs.sort(key=lambda x: (0 - x[1], x[0]))
+    
+    
+    # TODO: Return the top n words as a list of tuples (<word>, <count>)
+    top_n = []
+    for i in range(n):
+        top_n.append(count_pairs[i])
+    
+    return top_n
+
+def test_run():
+    """Test count_words() with some inputs."""
+    print count_words("cat bat mat cat bat cat", 3)
+    print count_words("betty bought a bit of butter but the butter was bitter", 3)
+
+
+if __name__ == '__main__':
+    test_run()
+
+```
+
 # Reference
 
