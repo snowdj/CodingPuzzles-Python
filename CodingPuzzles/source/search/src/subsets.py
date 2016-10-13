@@ -1,23 +1,17 @@
 def subsets(S):
     def dfs(depth, start, valuelist):
-        cnt[0] += 1
-        print("---- calling DFS #{0}".format(cnt[0]))
-        print("depth: {0}".format(depth))
-        print("start: {0}".format(start))
-        print("valuelist: {0}".format(valuelist))
+        print("depth={0}, start={1}, valuelist={2}".format(depth, start, valuelist))
+        if len(valuelist) > 0:
+            res.append(valuelist)
 
-        res.append(valuelist)
         if depth == len(S):
             print("time to return")
             return
         for i in range(start, len(S)):
-            print("i = {0}".format(i))
-            print("S[i]: {0}".format(S[i]))
             dfs(depth+1, i+1, valuelist+[S[i]])
 
     S.sort()
     res = []
-    cnt = [0]
     dfs(0, 0, [])
     return res
 
