@@ -6,8 +6,9 @@ If you were only permitted to complete at most one transaction (ie, buy one and 
 
 # Thoughts
 
-- Find the lowest price
-- The method which finds the lowest price and the highest price will not work. Because in the stock buy/sell case, the low price must come before high price
+- Iterate each price and keep calculating the lowest price and the max profit (max(price[i] - lowest_price))
+- The method that finds the lowest price and the highest price will not work. Because in the stock buy/sell case, the low price must come before high price
+- The other idea is iterating each price, find the lowest price so far, and find the highest price appears after the lowest price. Possible maxprofit = highest_price - lowest_price. Final maxprofit = max(maxprofits).
 
 # My Solution
 

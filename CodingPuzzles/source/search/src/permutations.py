@@ -6,16 +6,16 @@ def permute(nums):
 
     result = []
     for i, item in enumerate(nums):
-        print("i={0}, item={1}".format(i, item))
+        #print("i={0}, item={1}".format(i, item))
         for p in permute(nums[:i] + nums[i + 1:]):
-            print("p={0}, item={1}, append {2}".format(p, item, p + [item]))
-            result.append(p + [item])
-            print("now result is ... {0}".format(result))
+            #print("p={0}, item={1}, append {2}".format(p, item, p + [item]))
+            result.append([item] + p)
+            #print("now result is ... {0}".format(result))
 
     return result
 
 def test():
-    print(permute([1,2,3]))
+    print(permute([1,5,9]))
 
 if __name__ == "__main__":
     test()
