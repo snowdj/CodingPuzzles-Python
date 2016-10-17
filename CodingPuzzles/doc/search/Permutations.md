@@ -21,6 +21,26 @@ For nums = ```[1,2,3]```, the permutations are:
 
 # Thoughts
 
+Solution 1. We can get all permutations by the following steps:
+
+```
+[1]
+[2,1]
+[1,2]
+[3,2,1]
+[2,3,1]
+[2,1,3]
+[3,1,2]
+[1,3,2]
+[1,2,3]
+```
+
+Loop through the array, in each iteraction, a new number is added to different locations of results of previous iteration. Start from an empty List.
+
+Solution 2. Recursively solve the problem. Swap each element with each element after it.
+
+Solution 3. DFS.
+
 # My Solution
 
 ```
