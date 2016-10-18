@@ -24,18 +24,18 @@ def intersect2(arr1, arr2):
 
     return list(c)
 
-def test():
+def test_main():
     input_array_1 = [-3, 1, 2, -3, 4];
     input_array_2 = [1,-3]
-    print "Test Data: "
-    print input_array_1
-    print input_array_2
+    print("Test Data: ")
+    print(input_array_1)
+    print(input_array_2)
 
-    print "Test Result -- intersect: "
-    print intersect(input_array_1, input_array_2)
+    print("Test Result -- intersect: ")
+    print(intersect(input_array_1, input_array_2))
 
-    print "Test Result -- intersect2: "
-    print intersect2(input_array_1, input_array_2)
+    print("Test Result -- intersect2: ")
+    print(intersect2(input_array_1, input_array_2))
 
 if __name__ == "__main__":
-    test()
+    test_main()
