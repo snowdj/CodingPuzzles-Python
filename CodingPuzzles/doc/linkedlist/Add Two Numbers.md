@@ -15,9 +15,9 @@ Given ```3->1->5``` and ```5->9->2```, return ```8->0->8```.
 # Thoughts
 
 ## Method 1
-- Add the value of nodes in both two lists. As the lists have reverse order, no need to change.
-- Carry = (Carry + val1 + val2 ) / 10
-- Sum = (carry + val1 + val2) % 10
+- Add the value of nodes in both two lists. As the digits are stored in the lists in  reverse order, no need to reorder the list.
+- carry = (carry + val1 + val2 ) / 10
+- sum = (carry + val1 + val2) % 10
 
 ## Method 2
 - Record the values of linked list nodes, and change to number (remember the reverse order)

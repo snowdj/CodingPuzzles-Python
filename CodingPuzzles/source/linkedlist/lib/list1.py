@@ -1,6 +1,4 @@
-import os, sys
-
-from CodingPuzzles.linkedlist.lib import listnode
+from CodingPuzzles.source.linkedlist.lib.listnode import ListNode
 
 class LinkedList1:
     # 0 -> 2 -> 3 -> 1 -> 4
@@ -17,8 +15,6 @@ class LinkedList1:
 
         self.head = node0
         self.tail = node4
-
-        return node0
 
     def getHead(self):
         return self.head
