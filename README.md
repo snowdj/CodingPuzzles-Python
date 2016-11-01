@@ -16,11 +16,11 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
 
 ## Repo Structure
 
-- /CodingPuzzles-Python/doc
+- CodingPuzzles-Python/CodingPuzzles/doc
   - Documents for each problem and solutions
-- /CodingPuzzles-Python/source
+- CodingPuzzles-Python/CodingPuzzles/source
   - Source code of the problem solutions
-- /doc
-  - All markdown documents for gitbook deployment
+- CodingPuzzles-Python/doc
+  - All the markdown documents for gitbook deployment
   
 by [Euccas](http://euccas.me)
