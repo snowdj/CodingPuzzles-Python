@@ -20,5 +20,7 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - Documents for each problem and solutions
 - /CodingPuzzles-Python/source
   - Source code of the problem solutions
-
+- /doc
+  - All markdown documents for gitbook deployment
+  
 by [Euccas](http://euccas.me)
