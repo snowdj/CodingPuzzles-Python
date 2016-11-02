@@ -1,6 +1,10 @@
 # CodingPuzzles-Python
 Solve the basic programming puzzles with Python
 
+## Documents
+
+Published on GitBook [Solve Coding Puzzles with Python](https://euccas.gitbooks.io/solve-coding-puzzles-with-python/content/)
+
 ## About
 I keep this repo for recording and tracking my study on the fundamental data structure and algorithms.
 Usually I spend hours on the weekends on this topic and this repo.
