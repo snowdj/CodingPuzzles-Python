@@ -1,6 +1,0 @@
-# Problem
-
-# Thoughts
-
-# My Solution
-
