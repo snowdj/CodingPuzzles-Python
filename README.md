@@ -1,5 +1,13 @@
 # CodingPuzzles-Python
+
 Solve the basic programming puzzles with Python
+
+by [Euccas](http://euccas.me)
+
+## Project
+
+- Project repository is on GitHub [[ CodingPuzzles-Python ]](https://github.com/euccas/CodingPuzzles-Python).
+- Documents are published on GitBook [[ Solve Coding Puzzles with Python ]](https://euccas.gitbooks.io/solve-coding-puzzles-with-python/content/)
 
 ## About
 I keep this repo for recording and tracking my study on the fundamental data structure and algorithms.
@@ -13,5 +21,3 @@ My answer is: No and Yes.
 - Yes: To me one of the benefits of learning how to solve the programming puzzles is that you learn to master the most common algorithms which could be used to solve a wide range of problems. For those who work on Software Development but did not major in Computer Science when they were in college, perhaps learning these puzzles are even more valuable. It is a great training process through which you understand the algorithms not only in theory, but also in practice. Personally I feel that when I understand the fundamental stuff better and deeper, I tend to come up with better solutions when facing the problem in real projects.
 
 So in summary, I would say that you don't necessarily need solve the coding puzzles to get your work done when you build a software system, but you probably could do your work better if you understand well about these basic coding puzzles.
-
-by [Euccas](http://euccas.me)
