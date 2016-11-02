@@ -1,5 +1,8 @@
 # CodingPuzzles-Python
+
 Solve the basic programming puzzles with Python
+
+by [Euccas](http://euccas.me)
 
 ## Documents
 
@@ -26,5 +29,4 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - Source code of the problem solutions
 - CodingPuzzles-Python/doc
   - All the markdown documents for gitbook deployment
-  
-by [Euccas](http://euccas.me)
+
