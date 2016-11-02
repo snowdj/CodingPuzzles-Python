@@ -6,8 +6,8 @@ by [Euccas](http://euccas.me)
 
 ## Project
 
-- Project repository is on GitHub [[CodingPuzzles-Python]](https://github.com/euccas/CodingPuzzles-Python).
-- Documents are published on GitBook [[Solve Coding Puzzles with Python](https://euccas.gitbooks.io/solve-coding-puzzles-with-python/content/)]
+- Project repository is on GitHub [[ CodingPuzzles-Python ]](https://github.com/euccas/CodingPuzzles-Python).
+- Documents are published on GitBook [[ Solve Coding Puzzles with Python ]](https://euccas.gitbooks.io/solve-coding-puzzles-with-python/content/)
 
 ## About
 I keep this repo for recording and tracking my study on the fundamental data structure and algorithms.
