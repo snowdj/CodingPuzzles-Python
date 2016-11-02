@@ -1,4 +1,6 @@
 # Summary
 
-* [Add Two Numbers](numbers/add_two_numbers.md)
+* [Numbers]
+  * [Add Two Numbers](Add Two Numbers.md)
+  * [Add Two Numbers II](Add Two Numbers II.md)
 
