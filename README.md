@@ -10,7 +10,7 @@ Published on GitBook [Solve Coding Puzzles with Python](https://euccas.gitbooks.
 
 ## About
 I keep this repo for recording and tracking my study on the fundamental data structure and algorithms.
-Usually I spend hours on the weekends on this topic and this repo.
+Usually I spend hours in the weekends on this topic and this repo.
 
 One friend of mine ever asked me: Does solving these programming puzzles help you at work? 
 My answer is: No and Yes.
