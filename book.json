@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        "autocover",
+        "betterpagetitles",
+        "donate"
+    ],
+    "pluginsConfig": {}
+}

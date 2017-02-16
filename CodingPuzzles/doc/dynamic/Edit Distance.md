@@ -24,7 +24,20 @@ Given word1 = ```"mart"``` and word2 = ```"karma"```, return ```3```.
   - dp[i][0] = i # delete i letters
 - The equation of getting the minimal edit distance is
   - dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+(0 if word1[i-1]==word2[j-1] else 1))
-  - Check out the reference video (by Ben Langmead) to learn more about this equation
+  - Check out the reference video (by Ben Langmead, or from MIT) to learn more about this equation
+  - For x[i]->y[j], three possibly ways
+    - Replace x[i] with y[j] if x[i] != y[j]
+    - Insert y[i] before x[i], then continue processing x[i:] and y[j+1:]
+    - Delete x[i] to makes x[i+1] = y[j], then continue processing x[i+1:] and y[j:]
+    - So the DP equation is
+
+```
+DP(i,j) = min(
+ cost of replacing x[i] -> y[j] + DP(i+1, j+1),
+ cost of inserting y[j] + DP(i, j+1),
+ cost of deleting x[i] + DP(i+1, j)
+)
+```    
 
 # My Solution
 
@@ -49,3 +62,6 @@ Given word1 = ```"mart"``` and word2 = ```"karma"```, return ```3```.
 - https://www.youtube.com/watch?v=We3YDTzNXEk
 
 - https://www.youtube.com/watch?v=eAVGRWSryGo 
+
+- https://www.youtube.com/watch?v=ocZMDMZwhCY
+MIT CS Course. Explains edit distance DP algorithm with thinking in a recursive way. Easy to understand.

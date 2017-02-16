@@ -6,11 +6,16 @@ Return a deep copy of the list.
 
 # Thoughts
 
+## A straight forward solution is copying with visiting the linked list twice
+- In the first visit, copying the nodes
+- In the second visit, copying the random pointer
+
+## A better solution requires only one visiting of the linked list
 - Step 1: Insert a new node after each node in the original list
   - new node value = original node value
   - new node random pointer = original node random pointer (initial, optional)
 - Step 2: Mapping the random pointer
-  - New node's random pointer = original node random.next
+  - New node's random pointer = original node random.next (the random.next is a copy of the original random)
 - Note scanning the original node only: tmp = tmp.next.next
 - Separate the new nodes in a new linked list (head.next = tmp.next)
 
