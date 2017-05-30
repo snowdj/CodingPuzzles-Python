@@ -9,6 +9,7 @@ by [Euccas](http://euccas.me)
 Published on GitBook [Solve Coding Puzzles with Python](https://euccas.gitbooks.io/solve-coding-puzzles-with-python/content/)
 
 ## About
+
 I keep this repo for recording and tracking my study on the fundamental data structure and algorithms.
 Usually I spend hours in the weekends on this topic and this repo.
 
@@ -21,13 +22,17 @@ My answer is: No and Yes.
 
 So in summary, I would say that you don't necessarily need solve the coding puzzles to get your work done when you build a software system, but you probably could do your work better if you understand well about these basic coding puzzles.
 
+*(Last updated: October 2016)*
+
 ## Repo Structure
 
-- CodingPuzzles-Python/CodingPuzzles/doc
+- CodingPuzzles-Python/leet/doc
   - Documents for each problem and solutions
-- CodingPuzzles-Python/CodingPuzzles/source
+  - Added in 2016
+- CodingPuzzles-Python/leet/source
   - Source code of the problem solutions
-- CodingPuzzles-Python/course_algorithm_toolbox
+  - Added in 2016
+- CodingPuzzles-Python/course/algorithm_toolbox
   - Source code for Coursera Course: [Algorithm Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
   - Added in 2017
 - CodingPuzzles-Python, branch **doc**
