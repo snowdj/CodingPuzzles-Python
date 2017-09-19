@@ -46,5 +46,5 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - All the markdown documents for gitbook deployment
 
 - **Wiki**
-  - Where I write the notes
+  - [Where I write the notes](https://github.com/euccas/CodingPuzzles-Python/wiki)
   - Added in 2017
