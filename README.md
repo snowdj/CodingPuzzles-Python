@@ -39,7 +39,8 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - Added in 2017
 
 - **playground**
-  - problems and solutions I collected at work
+  - Problems and solutions I collected at work
+  - Added in 2017
   
 - **doc**
   - All the markdown documents for gitbook deployment
