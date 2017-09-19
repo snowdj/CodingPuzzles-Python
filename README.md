@@ -26,15 +26,25 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
 
 ## Repo Structure
 
-- CodingPuzzles-Python/leet/doc
+- **leet/doc**
   - Documents for each problem and solutions
   - Added in 2016
-- CodingPuzzles-Python/leet/source
+  
+- **leet/source**
   - Source code of the problem solutions
   - Added in 2016
-- CodingPuzzles-Python/course/algorithm_toolbox
+
+- **course/algorithm_toolbox**
   - Source code for Coursera Course: [Algorithm Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
   - Added in 2017
-- CodingPuzzles-Python, branch **doc**
-  - All the markdown documents for gitbook deployment
 
+- **playground**
+  - Problems and solutions I collected at work
+  - Added in 2017
+
+- **Wiki**
+  - [Where I write the notes](https://github.com/euccas/CodingPuzzles-Python/wiki)
+  - Added in 2017
+  
+- **branch doc**
+  - All the markdown documents for gitbook deployment
