@@ -45,3 +45,6 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
 - **doc**
   - All the markdown documents for gitbook deployment
 
+- **Wiki**
+  - Where I write the notes
+  - Added in 2017
