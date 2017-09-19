@@ -26,19 +26,19 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
 
 ## Repo Structure
 
-- leet/doc
+- **leet/doc**
   - Documents for each problem and solutions
   - Added in 2016
   
-- leet/source
+- **leet/source**
   - Source code of the problem solutions
   - Added in 2016
 
-- course/algorithm_toolbox
+- **course/algorithm_toolbox**
   - Source code for Coursera Course: [Algorithm Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
   - Added in 2017
 
-- playground
+- **playground**
   - problems and solutions I collected at work
   
 - **doc**
