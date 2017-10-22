@@ -4,7 +4,7 @@ http://www.lintcode.com/en/problem/reverse-linked-list-ii/
 
 Reverse a linked list from position m to n.
 
-
+Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
 
 # Thoughts
 
@@ -18,31 +18,34 @@ Reverse a linked list from position m to n.
   
 # My Solution
 
-```
-def reverseBetween(head, m, n):
-    if head is None or head.next is None:
-        return head
+```python
+    def reverseBetween(head, m, n):
+        if head is None or m == n:
+            return head
     
-    dummy = head
-    preStart = head
-    for i in range(m):
-        if i == m-2:
-            preStart = head
-        head = head.next
-    
-    start = head
-    lastHead = None
-    for j in range(m, n):
-        lastNext = head.next
-        head.next = lastHead
-        lastHead = head
-        head = lastNext
-    
-    preStart.next = lastHead
-    start.next = head
-    
-    return dummy
-
+        first = head
+        c = 0
+        prev = None
+        while (head and c < m-1):
+            prev = head
+            head = head.next
+            c += 1
+        new_head = prev
+        new_tail = head
+        while (head and c <= n-1):
+            next_node = head.next
+            head.next = new_head
+            new_head = head
+            head = next_node
+            c += 1
+        new_tail.next = next_node
+                
+        if not prev == None:
+            prev.next = new_head
+        else:
+            first = new_head
+        
+        return first
 ```
 
 # Reference
