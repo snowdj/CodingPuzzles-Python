@@ -11,13 +11,14 @@ Given ```1->2->3->4->null```, reorder it to ```1->4->2->3->null```
 
 # Thoughts
 
+- If this operation need to be done for an array, you can use two pointers, one points to the head, one points to the tail. But this is a linked list, you can't move a pointer from tail backward. So need use a "cutting" method.
 - Cut the one linked list into two linked lists, the cut point is the middle element
 - Reverse the second linked list
 - Connect the first linked list and the second linked list
 
 # My Solution
 
-```
+```python
 def reorderList(head):
     if head is None or head.next is None:
         return head
