@@ -31,7 +31,7 @@ Pay attention to:
 
 # My Solution
 
-```
+```python
     def addTwoNumbers(l1, l2):
         if l1 == None: return l2
         if l2 == None: return l1
@@ -57,7 +57,7 @@ Pay attention to:
 
 ## Python 3
 
-```
+```python
 class Node:
     def __init__(self, value=None, next=None):
         self._value = value

@@ -28,7 +28,7 @@ This method has one problem, if the linked list is very long, the number can exc
 
 ## Method 1
 
-```
+```python
 def add_two_numbers(l0, l1):
     if l0 is None: return l1
     if l1 is None: return l0
@@ -70,5 +70,4 @@ while (result):
     result = result.next
 ```
 
-## Method 2
 

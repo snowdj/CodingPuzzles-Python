@@ -16,7 +16,7 @@ Given ```-21->10->4->5```, tail connects to node index 1, return true
 
 # My Solution
 
-```
+```python
     def hasCycle(head):
         # write your code here
         if head is None or head.next is None:

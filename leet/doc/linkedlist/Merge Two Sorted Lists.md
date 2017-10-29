@@ -10,12 +10,16 @@ Given ```1->3->8->11->15->null```, ```2->null```, return ```1->2->3->8->11->15->
 
 # Thoughts
 
-- Merge sort
-- Use a dummy node
+- Merge sort algorithm: compare the first element in two lists.
+- Use a dummy node as the beginning of the merged list, so while loop can always operate on "dummy.next". 
+- Pay attention to:
+  - Comparison: l1.val, l2.val, not l1, l2
+  - Use dummy node to iterate the list, so need record the position of "head" in the beginning
+
 
 # My Solution
 
-```
+```python
     def mergeTwoLists(l1, l2):
         # write your code here
         if l1 is None:

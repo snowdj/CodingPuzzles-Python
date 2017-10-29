@@ -14,7 +14,7 @@ Given ```1->2->3->4->5``` and k = ```2```, return ```4->5->1->2->3```
 
 # My Solution
 
-```
+```python
     def rotateRight(self, head, k):
         # write your code here
         if head is None:

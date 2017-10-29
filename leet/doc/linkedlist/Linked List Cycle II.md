@@ -18,7 +18,7 @@ Given ```-21->10->4->5```, tail connects to node index 1, return ```10```
 
 # My Solution
 
-```
+```python
 def detectCycle(head):
     if head == None or head.next == None:
         return head

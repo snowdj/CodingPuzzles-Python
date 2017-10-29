@@ -11,6 +11,7 @@ Given ```1->2```, return the node with value 1.
 
 # Thoughts
 
+- Use a fast and a slow pointer. Slow pointer reaches the middle when fast pointer reaches the end of the list.
 - If there are two nodes, return the first node. This requirement means the condition of while loop is on fast.next.next
 
 # My Solution

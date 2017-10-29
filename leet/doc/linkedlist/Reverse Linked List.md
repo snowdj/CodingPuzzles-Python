@@ -19,7 +19,7 @@ Given ```1->2->3```, return the reversed linked list ```3->2->1```.
 
 # My Solution
 
-```
+```python
 def reverse_linkedlist(l0):
     if l0 is None or l0.next is None:
         return l0
