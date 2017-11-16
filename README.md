@@ -34,17 +34,25 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - Source code of the problem solutions
   - Added in 2016
 
-- **course/algorithm_toolbox**
+- **leet/notebook**
+  - Jupyter notebooks for some problems
+  - Added in 2017
+
+- **courses/ucsd_algorithm_toolbox**
   - Source code for Coursera Course: [Algorithm Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
+  - Added in 2017
+
+- **jupyter_notebooks**
+  - Jupyter notebooks for code snippets, for experiments or learning
   - Added in 2017
 
 - **playground**
   - Problems and solutions I collected at work
   - Added in 2017
 
-- **Wiki**
-  - [Where I write the notes](https://github.com/euccas/CodingPuzzles-Python/wiki)
+- **py-snippet**
+  - Python code snippets, for experiments or debuggging
   - Added in 2017
-  
+
 - **branch doc**
   - All the markdown documents for gitbook deployment

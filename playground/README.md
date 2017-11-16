@@ -1,4 +1,4 @@
-Here are some puzzles I collected from work.
+These are some programming puzzles I collected from work.
 
 Some were asked by my colleague, and I'd love to think and solve them, to see if I can come up with some good solutions ;-)
 
