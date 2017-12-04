@@ -1,4 +1,6 @@
-# Problem
+# Find Peak Element
+
+## Problem
 
 http://www.lintcode.com/en/problem/find-peak-element/
 
@@ -18,7 +20,7 @@ Find a peak element in this array. Return the index of the peak.
 Given ```[1, 2, 1, 3, 4, 5, 7, 6]```
 Return index ```1``` (number 2) or ```6``` (number 7)
 
-# Thoughts
+## Thoughts
 
 - Binary Search
 - When randomly picking a position ```t``` from the given array, there will be four possible conditions:
@@ -27,7 +29,7 @@ Return index ```1``` (number 2) or ```6``` (number 7)
   - A[t-1] < A[t] < A[t+1]: Peak is on the right
   - A[t-1] > A[t], A[t+1] > A[t]: Peak is on the right, or left
   
-# My Solution
+## My Solution
 
 ```
 def findPeak(A):
@@ -50,4 +52,4 @@ def findPeak(A):
 
 ```
 
-# Reference
+## Reference
