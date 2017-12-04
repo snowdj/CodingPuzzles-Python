@@ -1,4 +1,6 @@
-# Problem
+# Search Insert Position
+
+## Problem
 
 http://www.lintcode.com/en/problem/search-insert-position/
 
@@ -11,15 +13,19 @@ You may assume NO duplicates in the array.
 ```[1,3,5,6]```, 5 -> 2
 ```[1,3,5,6]```, 7 -> 4
 
-# Thoughts
+## Thoughts
 
 - Binary Search
-- start: 0, end; len(array) - 1
+- start: 0, end: len(array) - 1
 - mid: start + (end - start)/2
+- If target doesn't exist in the array, insert position has three posibilities
+  - on the left of start (smaller than start)
+  - on the right of end (larger than end)
+  - between start and end
 
-# My Solution
+## My Solution
 
-```
+```python
 def searchInsert(self, A, target):
     if len(A) == 0:
         return 0
@@ -50,4 +56,4 @@ def searchInsert(self, A, target):
         return start + 1
 ```
 
-# Reference
+## Reference
