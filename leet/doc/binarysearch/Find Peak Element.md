@@ -18,6 +18,7 @@ Find a peak element in this array. Return the index of the peak.
 **Example**
 
 Given ```[1, 2, 1, 3, 4, 5, 7, 6]```
+
 Return index ```1``` (number 2) or ```6``` (number 7)
 
 ## Thoughts
@@ -31,7 +32,7 @@ Return index ```1``` (number 2) or ```6``` (number 7)
   
 ## My Solution
 
-```
+```python
 def findPeak(A):
     start, end = 1, len(A) - 2:
     while start + 1 < end:
