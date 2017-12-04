@@ -29,6 +29,7 @@ Return index ```1``` (number 2) or ```6``` (number 7)
   - A[t-1] < A[t] > A[t+1]: Peak is t
   - A[t-1] < A[t] < A[t+1]: Peak is on the right
   - A[t-1] > A[t], A[t+1] > A[t]: Peak is on the right, or left
+- Key is analyze relationship of the points by visualizing them, like trying to see the geometry composed by the points
   
 ## My Solution
 
