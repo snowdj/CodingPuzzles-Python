@@ -1,4 +1,6 @@
-# Problem
+# Two Sum Closet
+
+## Problem
 
 http://www.lintcode.com/en/problem/two-sum-closest/
 
@@ -12,12 +14,14 @@ Given array ```nums = [-1, 2, 1, -4]```, and target = ```4```.
 
 The minimum difference is ```1```. (4 - (2 + 1) = 1).
 
-# Thoughts
+## Thoughts
 
-- A straight forward solution:
-  - For each number nums[i] in the array, check nums[i+1:] to get the sum of two integers. 
-  - Record the difference between the sum and the target. Return the minimum value in the difference record.
-- A better solution: using two pointers
+### A straight forward solution:
+
+- For each number nums[i] in the array, check nums[i+1:] to get the sum of two integers. 
+- Record the difference between the sum and the target. Return the minimum value in the difference record.
+
+### A better solution: using two pointers
   - First, sort the list ascending. 
   - Use two pointers at the front (i) and the end (j). Sum nums[i] and nums[j]. As the list is sorted, we can decide whether the closet sum can be obtained by increasing i, or decreasing j
   - If nums[i] + nums[j] > target, decrease j; record the min diff
