@@ -1,4 +1,6 @@
-# Problem
+# Three Sum
+
+## Problem
 
 http://www.lintcode.com/en/problem/3sum/
 
@@ -19,16 +21,21 @@ For example, given array S = ```{-1 0 1 2 -1 -4}```, A solution set is:
 (-1, -1, 2)
 ```
 
-# Thoughts
+## Thoughts
 
+- A straight forward method is:search every 3 element pairs, after sorting the input array
 - Use two pointers
 - Sort the array first to make it possible to decide how to move the pointers according to the result
+- Three pointers:
+  - pointer 1: scan from 0 to len(list) - 2
+  - pointer 2: for each pointer 1, starts from p1+1, moves to right (till meet p3)
+  - pointer 3: starts from the last element in list, moves to left (till meet p2)
 - Need handle the case when two numbers are equal
 - Time complexity: O(n^2)
 
-# My Solution
+## My Solution
 
-```
+```python
 def threeSum(num):
     num.sort()
     res = []
@@ -61,3 +68,4 @@ def threeSum(num):
 
 ```
 
+## Reference
