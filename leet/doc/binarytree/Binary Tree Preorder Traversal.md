@@ -1,6 +1,7 @@
 # Binary Tree Preorder Traversal
 
 ## Problem
+
 Given a binary tree, return the preorder traversal of its nodes' values.
 
 **Example**
@@ -29,7 +30,7 @@ return ```[1,2,4,5,3]```
 
 ## My Solution
 
-```
+```python
 def preorderTraversal(root):
   if root is None:
     return []
@@ -45,6 +46,7 @@ def preorderTraversal(root):
     if node.left:
       stack.append(node.left)
     
-    return preorder
-end                   
+  return preorder                   
 ```
+
+## Reference
