@@ -1,4 +1,6 @@
-# Problem
+# Maximum Subarray Difference
+
+## Problem
 
 http://www.lintcode.com/en/problem/maximum-subarray-difference/
 
@@ -7,9 +9,11 @@ Find two non-overlapping subarrays A and B, which ```|SUM(A) - SUM(B)|``` is the
 Return the largest difference.
 
 *Notice*
+
 The subarray should contain at least one number
 
 **Example**
+
 For ```[1, 2, -3, 1]```, return ```6```
 
 # Thoughts
@@ -17,10 +21,11 @@ For ```[1, 2, -3, 1]```, return ```6```
 - Similar problem: Maximum Subarray II
 - DP record: Check the maximum subarray and minimum subarray in the range [0:i] and range [i+1:]
 - Check the DP record, find the max(abs(left max - right min), abs(left min - right max))
+- This problem is similar to "Best Time to Buy and Sell stocks III"
 
 # My Solution
 
-```
+```python
 def maxDiffSubArrays(nums):
     n = len(nums)
     mx1 = [0] * n
@@ -56,7 +61,7 @@ def maxDiffSubArrays(nums):
     
 ```
 
-# Reference
+## Reference
 
 - http://www.it610.com/article/1292209.htm
 
