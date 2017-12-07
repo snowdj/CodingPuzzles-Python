@@ -1,4 +1,6 @@
-# Problem
+# Sort Colors
+
+## Problem
 
 http://www.lintcode.com/en/problem/sort-colors/
 
@@ -15,14 +17,14 @@ Here, we will use the integers ```0```, ```1```, and ```2``` to represent the co
 
 Given ```[1, 0, 1, 2]```, sort it in-place to ```[0, 1, 1, 2]```.
 
-# Thoughts
+## Thoughts
 
 - Use two pointers from the start and the end of the original array
 - Comparing the two elements and swapping them if needed, to make sure the 0's are all in the left, and the 2's are all in the right
 
-# My Solution
+## My Solution
 
-```
+```python
 def sortColors(nums):
     if nums is None or len(nums) == 0:
         return
@@ -42,3 +44,6 @@ def sortColors(nums):
         else:
             i += 1
 ```
+
+## Reference
+
