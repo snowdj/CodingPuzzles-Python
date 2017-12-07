@@ -1,4 +1,6 @@
-# Problem
+# Minimum Subarray
+
+## Problem
 
 http://www.lintcode.com/en/problem/minimum-subarray/
 
@@ -7,12 +9,13 @@ Given an array of integers, find the subarray with smallest sum.
 Return the sum of the subarray.
 
 *Notice*
+
 The subarray should contain one integer at least.
 
 **Example**
 For ```[1, -1, -2, 1]```, return ```-3```. 
 
-# Thoughts
+## Thoughts
 
 - Solution 1: Sliding Window
   - The minsum comes from the max range of a descending range
@@ -21,29 +24,30 @@ For ```[1, -1, -2, 1]```, return ```-3```.
 
 - Solution 2: Prefix Sum: Min Sum = Current sum - Pre Max Sum
 
-# My Solution
+- Can't sort the array for solving this problem because the sub array is supposed to be a consecutive range in the array.
 
-## Solution 1
+## My Solution
 
-```
+### Solution 1: Sliding Window
+
+```python
 def minSubArray(nums):
-
     if nums is None or len(nums) == 0:
         return None
         
-        minSum = sys.maxint
-        tsum = 0
-        for i in nums:
-            tsum += i
-            minSum = min(minSum, tsum)
-            tsum = min(tsum, 0)
+    minSum = sys.maxint
+    tsum = 0
+    for i in nums:
+        tsum += i
+        minSum = min(minSum, tsum)
+        tsum = min(tsum, 0)
         
-        return minSum
+    return minSum
 ```
 
-## Solution 2
+### Solution 2
 
-```
+```python
 def minSubArray(nums):
     if nums is None or len(nums) == 0:
         return 0
@@ -60,3 +64,5 @@ def minSubArray(nums):
     
     return minSum
 ```
+
+## Reference
