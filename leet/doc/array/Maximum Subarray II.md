@@ -45,3 +45,5 @@ def maxTwoSubArrays(nums):
     
     return mx
 ```
+
+## Reference
