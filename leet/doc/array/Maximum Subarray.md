@@ -1,4 +1,6 @@
-# Problem
+# Maximum Subarray
+
+## Problem
 
 http://www.lintcode.com/problem/maximum-subarray/
 
@@ -8,7 +10,7 @@ Given an array of integers, find a contiguous subarray which has the largest sum
 
 Given the array ```[−2,2,−3,4,−1,2,1,−5,3]```, the contiguous subarray ```[4,−1,2,1]``` has the largest sum = 6.
 
-# Thoughts
+## Thoughts
 
 - Solution 1: Sliding Window
   - The maxsum comes from the max range of a growing range
@@ -16,11 +18,11 @@ Given the array ```[−2,2,−3,4,−1,2,1,−5,3]```, the contiguous subarray `
   - Keep a tsum. If tsum < 0, reset the start point of tsum range
 - Solution 2: Prefix Sum: Max Sum = Current Sum - Pre Min Sum
 
-# My Solution
+## My Solution
 
-## Method 1: Sliding Window
+### Method 1: Sliding Window
 
-```
+```python
 def maxSubArray(nums):
     maxsum = - sys.maxint - 1 # Min Integer
     tsum = 0
@@ -33,9 +35,9 @@ def maxSubArray(nums):
     return maxsum
 ```
 
-## Method 2: Prefix Sum
+### Method 2: Prefix Sum
 
-```
+```python
 def maxSubArray(nums):
     if nums is None or len(nums) == 0:
         return 0
@@ -53,5 +55,5 @@ def maxSubArray(nums):
     return maxSum
 ```
 
-# Reference
+## Reference
 
