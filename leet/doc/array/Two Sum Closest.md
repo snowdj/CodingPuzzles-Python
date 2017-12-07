@@ -30,7 +30,7 @@ The minimum difference is ```1```. (4 - (2 + 1) = 1).
   - Because the Two Sum problem asks for the exact element index. Duplicate values could produce wrong element indexes in the result.
   - This problem does not care about index, it asks only for the difference between target and 2sum value.
 
-# My Solution
+## My Solution
 
 ```python
 def twoSumClosest(nums, target):
@@ -49,3 +49,5 @@ def twoSumClosest(nums, target):
     
     return diff
 ```
+
+## Reference
