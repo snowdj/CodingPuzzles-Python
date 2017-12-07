@@ -1,4 +1,6 @@
-# Problem
+# Best Time to Buy and Sell Stock II
+
+## Problem
 
 http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-ii/
 
@@ -10,15 +12,15 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 Given an example ```[2,1,2,0,1]```, return 2
 
-# Thoughts
+## Thoughts
 
 - The condition that you must sell the stock before you buy again makes this problem easier to be solved (no overlapping windows)
 - When the price reaches a highest point in an ascending order, sell the stocks to get the maximum profit. Accumulate the profits in the process of reaching the highest price, such as ```1, 2, 3```, the accumulated profit is ```1, 2```. 
 - As the problem only asks for the maximum profit, no need record each buying price and selling price
 
-# My Solution
+## My Solution
 
-```
+```python
 def maxProfit(prices):
     maxprofit = 0
     for i in range(1, len(prices)):
@@ -26,3 +28,5 @@ def maxProfit(prices):
             maxprofit += prices[i] - prices[i-1]
     return maxprofit
 ```
+
+## Reference
