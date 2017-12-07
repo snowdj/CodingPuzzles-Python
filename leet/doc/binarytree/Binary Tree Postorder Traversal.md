@@ -1,4 +1,6 @@
-# Problem
+# Binary Tree Postorder Traversal
+
+## Problem
 
 http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/
 
@@ -18,34 +20,33 @@ Given binary tree ```{1,#,2,3}```
 
 Return ```[3,2,1]```
 
-# Thoughts
+## Thoughts
 
 - Recursive, Divide and Conquer
-- left, right, root
+- Postorder: left, right, root
 
-# My Solution
+## My Solution
 
-```
-    def postorderTraversal(self, root):
-        # write your code here
-
-        if root is None:
-            return []
+```Python
+def postorderTraversal(root):
+    # write your code here
+    if root is None:
+        return []
         
-        postorder = []
-        self.rec(root, postorder)
+    postorder = []
+    rec(root, postorder)
         
-        return postorder
+    return postorder
     
-    def rec(self, node, order):
-        if node is None:
-            return
+def rec(node, order):
+    if node is None:
+        return
         
-        if node.left:
-            self.rec(node.left, order)
-        if node.right:
-            self.rec(node.right, order)
-        order.append(node.val)
+    if node.left:
+        self.rec(node.left, order)
+    if node.right:
+        self.rec(node.right, order)
+    order.append(node.val)
 ```
 
-# Reference
+## Reference
