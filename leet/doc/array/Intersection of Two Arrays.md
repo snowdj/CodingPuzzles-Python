@@ -1,10 +1,13 @@
-# Problem
+# Intersection of Two Arrays
+
+## Problem
 
 http://www.lintcode.com/en/problem/intersection-of-two-arrays/
 
 Given two arrays, write a function to compute their intersection.
 
 *Notice*
+
 - Each element in the result must be unique
 - The result can be in any order
 
@@ -12,7 +15,7 @@ Given two arrays, write a function to compute their intersection.
 
 Given nums=```[1,2,2,1]```, nums2=```[2,2]```, return ```[2]```. 
 
-# Thoughts
+## Thoughts
 
 - Can you use Python's built-in function or not?
 - Change the arrays in-place?
@@ -22,13 +25,13 @@ Given nums=```[1,2,2,1]```, nums2=```[2,2]```, return ```[2]```.
     - list operation keeps shadow of the list, but set does not. In other words, set is fast
     - set is hashable
 
-# My Solution
+## My Solution
 
-## Method 1
+### Method 1
 
 Use set and intersection function.
 
-```
+```python
 def intersection(nums1, nums2):
     if len(nums1) == 0 or len(nums2) == 0:
         return []
@@ -44,7 +47,7 @@ def intersection(nums1, nums2):
 
 Use set without using the intersection function.
 
-```
+```python
 def intersection(nums1, nums2):
     # Write your code here
     if nums1 is None or nums2 is None or len(nums1) == 0 or len(nums2) == 0:
@@ -57,7 +60,7 @@ def intersection(nums1, nums2):
 
 Time Limit Exceeded on large data set.
 
-```
+```python
 def intersection(nums1, nums2):
     # Write your code here
     if nums1 is None or nums2 is None or len(nums1) == 0 or len(nums2) == 0:
@@ -75,7 +78,7 @@ def intersection(nums1, nums2):
 
 A Pythonish way. TLC on large data set.
 
-```
+```python
 def intersection(nums1, nums2):
     # Write your code here
     if nums1 is None or nums2 is None or len(nums1) == 0 or len(nums2) == 0:
@@ -85,4 +88,3 @@ def intersection(nums1, nums2):
     
     return list(set(res))
 ```
-
