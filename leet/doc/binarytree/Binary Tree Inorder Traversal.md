@@ -1,4 +1,6 @@
-# Problem
+# Binary Tree Inorder Traversal
+
+## Problem
 
 http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/
 
@@ -19,25 +21,28 @@ Return ```[1,3,2]```
 # Thoughts
 
 - Recursive + Divide and Conquer
-- left, root, right
+- inorder traversal: left, root, right
 
 # My Solution
 
-```
-    def inorderTraversal(self, root):
-        # write your code here
-        if root is None:
-            return []
-        inorder = []
-        self.rec(root, inorder)
-        return inorder
+```python
+def inorderTraversal(self, root):
+    # write your code here
+    if root is None:
+        return []
+    
+    inorder = []
+    self.rec(root, inorder)
+    return inorder
     
     def rec(self, node, order):
         if node.left:
             self.rec(node.left, order)
+    
         order.append(node.val)
+    
         if node.right:
             self.rec(node.right, order)
 ```
 
-# Reference
+## Reference
