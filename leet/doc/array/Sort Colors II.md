@@ -1,17 +1,20 @@
-# Problem
+# Sort Colors II
+
+## Problem
 
 http://www.lintcode.com/en/problem/sort-colors-ii/
 
 Given an array of n objects with k different colors (numbered from 1 to k), sort them so that objects of the same color are adjacent, with the colors in the order 1, 2, ... k.
 
 *Notice*
+
 You are not suppose to use the library's sort function for this problem.
 
 **Example**
 
 Given colors=```[3, 2, 2, 1, 4]```, ```k=4```, your code should sort colors in-place to ```[1, 2, 2, 3, 4]```.
 
-# Thoughts
+## Thoughts
 
 - A rather straight forward solution is a two-pass algorithm using counting sort. That will cost O(k) extra memory.
   - Two-pass algorithm: first pass, count the number of each color
@@ -19,9 +22,9 @@ Given colors=```[3, 2, 2, 1, 4]```, ```k=4```, your code should sort colors in-p
 
 - Another method is using the similar method as in Sort Color for three colors.  
 
-# My Solution
+## My Solution
 
-```
+```python
     def sortColors2(self, colors, k):
         # write your code here
         count = 0
@@ -65,7 +68,7 @@ Given colors=```[3, 2, 2, 1, 4]```, ```k=4```, your code should sort colors in-p
         return nums
 ```
 
-# Reference
+## Reference
 
 - https://lefttree.gitbooks.io/leetcode-categories/content/quickSelect/sortColors2.html
 - http://www.cnblogs.com/yuzhangcmu/p/4177326.html
