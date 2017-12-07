@@ -1,4 +1,7 @@
-# Problem
+
+# Best Time to Buy and Sell Stock III
+
+## Problem
 
 http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iii/
 
@@ -11,9 +14,10 @@ Design an algorithm to find the **maximum** profit. You may complete at most *tw
 You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
 **Example**
+
 Given an example ```[4,4,6,1,1,4,2,5]```, return ```6```.
 
-# Thoughts
+## Thoughts
 
 - The constraint is you must sell the stock before you buy again, and do at most two transactions
 - As you need pick the best two transactions which will cause maximum profit, you'll need record a history of the possible transactions
@@ -21,9 +25,9 @@ Given an example ```[4,4,6,1,1,4,2,5]```, return ```6```.
 - How to get f1? Find the minimum buying price. Check from the 1st price to the last price, maximum profit you can get before price[i] is the maximum price[i] - minimum value in range [0:i]
 - How to get f2? Find the maximum selling price. Check from the last price to the 1st price, maximum profit you can get after price[i] is the maximum value - price[i] in range[i+1:]
 
-# My Solution
+## My Solution
 
-```
+```python
 def maxProfit(prices):
     length = len(prices)
     if length == 0:
@@ -49,3 +53,5 @@ def maxProfit(prices):
     
     return res
 ```
+
+## Reference
