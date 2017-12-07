@@ -30,14 +30,14 @@ The binary tree A is a height-balanced binary tree, but B is not.
 
 ## My Solution
 
-```
+```python
 def isBalanced(root):
   balanced, height = validate(root)
   return balanced
   
 def validate(root):
   if root is None:
-    return True, 0
+    return True, 0  # exit condition, one node, isBalanced is True
   
   balanced, leftHeight = validate(root.left)
   if not balanced:
@@ -49,3 +49,5 @@ def validate(root):
   
   return abs(leftHeight - rightHeight) <= 1, max(leftHeight, rightHeight) + 1
 ```
+
+## Reference
