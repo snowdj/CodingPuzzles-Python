@@ -1,4 +1,6 @@
-# Problem
+# Merge Sorted Array
+
+## Problem
 
 http://www.lintcode.com/problem/merge-sorted-array/
 
@@ -10,17 +12,17 @@ A = ```[1, 2, 3, empty, empty]```, B = ```[4, 5]```
 
 After merge, A will be filled as ```[1, 2, 3, 4, 5]```
 
-# Thoughts
+## Thoughts
 
 - This problem is an in-place merge sort problem
 - The length of the new array A after merging is len(A) + len(B), so we can do the merge sort reversely
-- Another solution is using Python's sort function
+- Another solution is using Python's sort function. Python sort is TimSort, average time complexity: O(nLogn)
 
-# My Solution
+## My Solution
 
-## Method 1
+### Method 1: In-place merge sort
 
-```
+```python
 def mergeSortedArray(A, m, B, n):
     pos = m + n - 1
     i = m - 1
@@ -37,7 +39,7 @@ def mergeSortedArray(A, m, B, n):
         pos -= 1
     
     while (i >= 0):
-        A[pos] = A[j]
+        A[pos] = A[i]
         pos -= 1
         i -= 1
     while (j >= 0):
@@ -46,13 +48,13 @@ def mergeSortedArray(A, m, B, n):
         j -= 1
 ```
 
-## Solution 2
+### Method 2
 
-```
+```python
 def mergeSortedArray(A, m, B, n):
     for i in range(n):
         A[i+m] = B[i]
     A.sort()
 ```
 
-# Reference
+## Reference
