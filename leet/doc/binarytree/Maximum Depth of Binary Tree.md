@@ -26,10 +26,12 @@ Use divide-and-conquer + recursive algorithm to solve this problem.
 
 ## My Solution
 
-```
+```python
 def maxDepth(root):
   if root is None:
     return 0
   
   return max(maxDepth(root.left), maxDepth(root.right)) + 1
 ```
+
+## Reference
