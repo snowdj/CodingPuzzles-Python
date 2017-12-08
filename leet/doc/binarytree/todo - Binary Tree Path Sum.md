@@ -1,4 +1,6 @@
-# Problem
+# Binary Tree Path Sum
+
+## Problem
 
 http://www.lintcode.com/en/problem/binary-tree-path-sum/
 
@@ -25,10 +27,8 @@ return
 ]
 ```
 
-# Thoughts
+## Thoughts
  
+## My Solution
 
- 
-# My Solution
-
-# Reference
+## Reference
