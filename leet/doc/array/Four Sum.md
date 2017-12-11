@@ -1,4 +1,6 @@
-# Problem
+# Four Sum
+
+## Problem
 
 http://www.lintcode.com/en/problem/4sum/
 
@@ -21,9 +23,9 @@ Given array S = ```{1 0 -1 0 -2 2}```, and target = ```0```. A solution set is:
 (-2, 0, 0, 2)
 ```
 
-# Thoughts
+## Thoughts
 
+## My Solution
 
-
-# My Solution
+## Reference
 
