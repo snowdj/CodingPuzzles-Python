@@ -44,7 +44,7 @@ DP(i,j) = min(
 )
 ```    
 
-# My Solution
+## My Solution
 
 ```python
 def minDistance(word1, word2):
@@ -62,11 +62,9 @@ def minDistance(word1, word2):
     return dp[m-1][n-1]
 ```
 
-# Reference
+## Reference
 
 - https://www.youtube.com/watch?v=We3YDTzNXEk
-
 - https://www.youtube.com/watch?v=eAVGRWSryGo 
-
 - https://www.youtube.com/watch?v=ocZMDMZwhCY
 MIT CS Course. Explains edit distance DP algorithm with thinking in a recursive way. Easy to understand.
