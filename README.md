@@ -38,21 +38,25 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - Jupyter notebooks for some problems
   - Added in 2017
 
-- **courses/ucsd_algorithm_toolbox**
+- **course/ucsd_algorithm_toolbox**
   - Source code for Coursera Course: [Algorithm Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
   - Added in 2017
 
-- **jupyter_notebooks**
+- **jupyter**
   - Jupyter notebooks for code snippets, for experiments or learning
   - Added in 2017
 
-- **playground**
+- **pickone**
   - Problems and solutions I collected at work
   - Added in 2017
 
 - **py-snippet**
   - Python code snippets, for experiments or debuggging
   - Added in 2017
+
+- **py-morsel**
+  - Weekly Python exercises
+  - Added in 2018
 
 - **branch doc**
   - All the markdown documents for gitbook deployment
