@@ -50,5 +50,9 @@ So in summary, I would say that you don't necessarily need solve the coding puzz
   - Python code snippets, for experiments or debuggging
   - Added in 2017
 
+- **dcp**
+	- Daily coding problems series
+	- Added in 2018
+
 - **branch doc**
   - All the markdown documents for gitbook deployment (from leet/doc)
