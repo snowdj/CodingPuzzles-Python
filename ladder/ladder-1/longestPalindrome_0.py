@@ -26,18 +26,27 @@ def findLongestPalindrome(s, pos_left, pos_right):
     if pos_left is None or pos_right is None:
         return 0
 
-    while (pos_left > 0 and pos_right < len(s)):
-        if s[pos_left] == s[pos_right]:
+    dist = pos_right - pos_left + 1
+    while (pos_left > 0 and pos_right < len(s) - 1):
+        if pos_left - 1 >= 0 and pos_right + 1 <= len(s) - 1 and s[pos_left - 1] == s[pos_right + 1]:
+            dist += 2
             pos_left -= 1
             pos_right += 1
         else:
             break
 
-    return pos_right - pos_left + 1 - 2
+    return dist
 
 
 if __name__ == "__main__":
     test_str = "abccccdd"
+    expected_result = 4
     res = longestPalindrome(test_str)
     print("test_str: {0}, result: {1}".format(test_str, res))
-    assert(res == 7)
+    assert(res == expected_result)
+
+    test_str = "abccb"
+    expected_result = 4
+    res = longestPalindrome(test_str)
+    print("test_str: {0}, result: {1}".format(test_str, res))
+    assert (res == expected_result)
