@@ -26,22 +26,6 @@ def longestPalindrome(s):
         return ""
     return s[start_pos:start_pos + maxlen]
 
-
-# def findLongestPalindrome(s, pos_left, pos_right):
-#     if pos_left is None or pos_right is None:
-#         return 0, -1
-#
-#     dist = pos_right - pos_left + 1
-#     while (pos_left > 0 and pos_right < len(s) - 1):
-#         if pos_left - 1 >= 0 and pos_right + 1 <= len(s) - 1 and s[pos_left - 1] == s[pos_right + 1]:
-#             dist += 2
-#             pos_left -= 1
-#             pos_right += 1
-#         else:
-#             break
-#
-#     return dist, pos_left
-
 def findLongestPalindrome(s, pos_left, pos_right):
     if pos_left is None or pos_right is None:
         return 0, -1
@@ -57,6 +41,9 @@ def findLongestPalindrome(s, pos_left, pos_right):
 
     return dist, pos_left
 
+
+def findLongestPalindrome_ref(s, pos_left, pos_right):
+    pass
 
 if __name__ == "__main__":
     test_str = "aaaa"
