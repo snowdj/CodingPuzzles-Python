@@ -43,14 +43,20 @@ def findK(A, target, k, closest_pos):
     return k_nums
 
 
+def kClosestNumbers_2(A, target, k):
+    dic = {i: abs(i - target) for i in A}
+    res = [j for j in sorted(dic, key=dic.get)]
+    return res[:k]
+
+
 if __name__ == "__main__":
-    # res = kClosestNumbers([1,2,3], 2, 3)
-    # print(res)
-    # expected_result = [2,1,3]
-    #
-    # res = kClosestNumbers([1,4,6,8], 3, 3)
-    # print(res)
-    # expected_result = [4,1,6]
+    res = kClosestNumbers([1,2,3], 2, 3)
+    print(res)
+    expected_result = [2,1,3]
+
+    res = kClosestNumbers([1,4,6,8], 3, 3)
+    print(res)
+    expected_result = [4,1,6]
 
     res = kClosestNumbers([1,4,6,10,20], 21, 4)
     print(res)
