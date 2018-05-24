@@ -1,6 +1,6 @@
 import os, sys
 
-import binarynode
+from binarynode import BinaryNode
 
 class BinaryTree1():
 ###############

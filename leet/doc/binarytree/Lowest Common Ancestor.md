@@ -23,7 +23,7 @@ LCA(6,7) = 7
 
 - Recursive
 - Return condition: If current node is null, or current node is one of the two given nodes, return current node
-- Recursively look for the position of A and B in the left subtree and right subtree. If A and B are in two subtrees, then root is their LCA
+- Recursively look for the position of A and B in the left subtree and right subtree. If A and B are in two subtrees, then the root is their LCA
 
 ## My Solution
 

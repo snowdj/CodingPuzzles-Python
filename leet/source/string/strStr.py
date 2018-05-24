@@ -27,6 +27,29 @@ def strStr(source, target):
 
     return -1
 
+def strStr1(source, target):
+    if source is None or target is None:
+        return -1
+
+    if source == target:
+        return 0
+
+    if target == "":
+        return 0
+
+    if len(source) < len(target):
+        return -1
+
+    slist = list(source)
+    tlist = list(target)
+
+    t_len = len(tlist)
+    for i in range(len(source)):
+        if source[i:i+t_len] == target:
+            return i
+
+    return -1
+
 if __name__ == "__main__":
-    res = strStr("tartarget", "target")
+    res = strStr1("tartarget", "target")
     print(res)

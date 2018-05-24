@@ -7,18 +7,18 @@ class Node():
 class BinaryTree():
     def __init__(self):
         self.root = Node(5)
-        node1_0 = Node(2)
-        node1_1 = Node(3)
-        node2_0 = Node(-1)
-        node2_1 = Node(4)
-        node2_2 = Node(2)
-        node2_3 = Node(0)
-        self.root.left = node1_0
-        self.root.right = node1_1
-        node1_0.left = node2_0
-        node1_0.right = node2_1
-        node1_1.left = node2_2
-        node1_1.right = node2_3
+        self.node1_0 = Node(2)
+        self.node1_1 = Node(3)
+        self.node2_0 = Node(-1)
+        self.node2_1 = Node(4)
+        self.node2_2 = Node(2)
+        self.node2_3 = Node(0)
+        self.root.left = self.node1_0
+        self.root.right = self.node1_1
+        self.node1_0.left = self.node2_0
+        self.node1_0.right = self.node2_1
+        self.node1_1.left = self.node2_2
+        self.node1_1.right = self.node2_3
 
         self.seq_preorder = []
         self.seq_inorder = []

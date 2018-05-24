@@ -1,6 +1,6 @@
 import os, sys
 
-import binarynode
+from binarynode import BinaryNode
 
 class BinaryTree0():
 ###############
@@ -11,12 +11,12 @@ class BinaryTree0():
 #0  2   -1
 
     def __init__(self):
-        node0 = binarynode.BinaryNode(0)
-        node1 = binarynode.BinaryNode(2)
-        node2 = binarynode.BinaryNode(-1)
-        node3 = binarynode.BinaryNode(3, node0, node1)
-        node4 = binarynode.BinaryNode(5, None, node2)
-        node5 = binarynode.BinaryNode(4, node3, node4)
+        node0 = BinaryNode(0)
+        node1 = BinaryNode(2)
+        node2 = BinaryNode(-1)
+        node3 = BinaryNode(3, node0, node1)
+        node4 = BinaryNode(5, None, node2)
+        node5 = BinaryNode(4, node3, node4)
         self.root = node5
         self.node0 = node0
         self.node1 = node1
