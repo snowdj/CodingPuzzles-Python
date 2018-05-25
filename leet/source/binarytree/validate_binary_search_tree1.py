@@ -21,24 +21,29 @@ class Solution:
     @param root: The root of binary tree.
     @return: True if the binary tree is BST, or false
     """
-
     def isValidBST(self, root):
-        self.lastVal = None
-        self.isBST = True
-
-        self.validate(root)
-
-        return self.isBST
-
-    def validate(self, root):
+        # write your code here
         if root is None:
-            return
+            return True
 
-        self.validate(self.left)
-        if self.lastVal is not None and self.lastVal > root.val:
-            self.isBST = False
-            return
+        self.last_val = None
+        return self.validate(root)
 
-        self.lastVal = root.val
-        self.validate(root.right)
+    def validate(self, node):
+        if node is None:
+            return True
 
+        is_bst = self.validate(node.left)
+        if not is_bst:
+            return False
+        if self.last_val is not None and self.last_val >= node.val:
+            return False
+
+        self.last_val = node.val
+        return self.validate(node.right)
+
+if __name__ == "__main__":
+    tree = BinaryTree()
+    sln = Solution()
+    result = sln.isValidBST(tree.root)
+    print(result)
