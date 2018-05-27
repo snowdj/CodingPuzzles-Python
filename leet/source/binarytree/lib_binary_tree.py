@@ -7,6 +7,13 @@ class Node():
         self.right = right
 
 class BinaryTree():
+    """
+        5
+       / \
+      2   3
+    /  \  / \
+    -1 4  2  0
+    """
     def __init__(self):
         self.root = Node(5)
         self.node1_0 = Node(2)
