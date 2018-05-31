@@ -65,3 +65,33 @@ class Solution1():
             return upperNode
 
         return node
+
+"""
+This method is easier to understand.
+Similar to binary search.
+"""
+class Solution2(object):
+    def closestValue(self, root, target):
+        """
+        :type root: TreeNode
+        :type target: float
+        :rtype: int
+        """
+        if root is None or target is None:
+            return None
+
+        self.result = root.val
+        self.search(root, target)
+        return self.result
+
+    def search(self, node, target):
+        if node is None:
+            return
+
+        if abs(target - self.result) > abs(target - node.val):
+            self.result = node.val
+
+        if target > node.val:
+            self.search(node.right, target)
+        else:
+            self.search(node.left, target)
