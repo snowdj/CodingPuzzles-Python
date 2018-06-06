@@ -18,6 +18,6 @@ class Solution:
             self.result.append(combination)
 
         for i in range(startpos, n):
-            if len(combination) > k:
-                return
+            #if len(combination) > k:
+            #    return
             self.dfs(n, k, i+1, combination+[i+1])
