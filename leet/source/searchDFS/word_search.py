@@ -47,3 +47,4 @@ class Solution:
 
 
 class Solution1():
+    pass
